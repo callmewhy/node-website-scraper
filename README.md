@@ -89,6 +89,7 @@ scraper.scrape({
     {directory: 'css', extensions: ['.css']}
   ],
   sources: [
+    {selector: 'img', attr: 'data-src', toAttr: 'src'},
     {selector: 'img', attr: 'src'},
     {selector: 'link[rel="stylesheet"]', attr: 'href'},
     {selector: 'script', attr: 'src'}
